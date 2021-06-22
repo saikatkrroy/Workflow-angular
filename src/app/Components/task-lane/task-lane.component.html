@@ -1,0 +1,14 @@
+<div class="card" ng-drop="true" (ng-drop-success)="onDropComplete()" >
+    <h3 class="card-header">{{title}}</h3>
+    <div class="card-body"  >
+        <div class="draggable-objects">
+            <div *ngFor="let item of items" draggable="true" (dragstart)="onDragStart()" (ng-drop-success)="onDropComplete()" id="{{item.id}}" class="drag">
+                <app-task-lane-item [item]="item" ></app-task-lane-item>
+            </div>
+        </div>
+    </div>
+    <div class="card-footer text-muted">
+        {{itemCount}}
+    </div>
+</div>
+

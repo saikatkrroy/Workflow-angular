@@ -1,0 +1,12 @@
+<div class="add-item">
+    <form [formGroup]="addItemForm" (ngSubmit)="onSubmit(addItemForm.value)">
+        <div>
+            <label for="itemText">
+            ItemText
+            </label>
+            <input id="itemText" type="text" formControlName="itemText">
+        </div>
+        
+        </form>
+</div>
+

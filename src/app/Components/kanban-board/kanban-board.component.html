@@ -1,0 +1,13 @@
+<div class="board" >
+  <div class="row">
+      <div class="col-md" >
+        <app-task-lane  id="todo" title="To-Do" [items]="todoItems"  ></app-task-lane>
+      </div>
+      <div class="col-md">
+        <app-task-lane  id="inProgress" title="InProgress" [items]="inProgressItems" ></app-task-lane>
+      </div>
+      <div class="col-md">
+        <app-task-lane  id="done" title="Done" [items]="doneItems" ></app-task-lane>
+      </div>
+  </div>
+</div>

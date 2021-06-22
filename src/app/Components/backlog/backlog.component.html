@@ -1,0 +1,12 @@
+<div class="backlog-view">
+    <p>Backlog</p>
+    <app-new-item-form></app-new-item-form>
+    <div class="card" *ngFor="let item of items">
+      <div class="card-block">
+        <h5 class="card-title"><span class="text-muted">#{{item.id}}</span>
+        {{item}}</h5>
+        <p>{{item}}</p> 
+      </div>
+  </div>
+    
+  </div>
